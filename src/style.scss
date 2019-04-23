@@ -1,13 +1,86 @@
-body, html {
-    font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#10ff08 100%);
-    height: 100%;
-  }
+$fontcolor:  rgb(255, 255, 255);
+$backgroundcolor: rgb(228, 62, 62);
 
-.logo {
-    background-image: url('img/CLKClogo2.png');
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  color: $fontcolor;
+  background-image: linear-gradient(to bottom right, rgb(72, 255, 0), rgb(0, 255, 255));
+  height: 100%;
+}
+
+#topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7px;
+}
+
+#header{
+  font-size: 140%;
+}
+
+#note{
+  width: 300px;
+  background-image: linear-gradient(to bottom right, rgba(160, 160, 160, 0.815), rgba(97, 97, 97, 0.685));
+  box-shadow: 3px 3px 3px #7a7a7a;
+}
+
+#note:hover{
+  width: 300px;
+  background-image: linear-gradient(to bottom right, rgba(207, 207, 207, 0.815), rgba(136, 136, 136, 0.685));
+  box-shadow: 5px 5px 5px #7a7a7a;
+}
+
+#label{
+  color: #333333;
+  font-size: 115%;
+}
+
+#form{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+}
+#textarea{
+  padding: 10px;
+}
+#textarea1{
+  padding: 10px;
+  width: 105px;
+}
+#textarea2{
+  padding: 10px;
+  width: 91%;
+}
+#noteBody{
+  padding: 7px;
+}
+
+#textinput{
+  margin: 10px;
+  width: 250px;
+  height: 25px;
+  font-size: 1.5em;
+  border-radius: .25em;
+}
+#textinput:hover{
+  box-shadow: 2px 2px 2px #7a7a7a;
+  transition-property: box-shadow;
+  transition-duration: .1s;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+#button{
+  font-size: 1em;
+  border-radius: .25em;
+}
+#button:hover{
+  box-shadow: 2px 2px 2px #7a7a7a;
+  transition-property: box-shadow;
+  transition-duration: .1s;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
